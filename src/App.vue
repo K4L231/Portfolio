@@ -1,6 +1,8 @@
 <template>
-  <isHeader />
-  <isBody />
+  <body>
+    <isHeader />
+    <isBody />
+  </body>
 </template>
 
 <script>
@@ -24,5 +26,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body {
+  background-color: rgba(32, 3, 3, 0.664);
 }
 </style>
