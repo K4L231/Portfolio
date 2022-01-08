@@ -1,19 +1,27 @@
 <template>
   <body>
-    <isHeader />
-    <isBody />
+    
+    <div class="container">
+      <isHeader />
+      <isBody />
+      <projects />
+      <contacts />
+    </div>
   </body>
 </template>
 
 <script>
 import isHeader from './components/isHeader.vue'
-import isBody from './components/IsBody.vue'
+import projects from './components/projects.vue'
 import IsBody from './components/IsBody.vue'
+import contacts from './components/contacts.vue'
 export default {
   name: 'App',
   components: {
     isHeader,
     IsBody,
+    projects,
+    contacts
   }
 }
 </script>
@@ -28,6 +36,8 @@ export default {
   margin-top: 60px;
 }
 body {
-  background-color: rgba(32, 3, 3, 0.664);
+  background-image: url('./assets/bg.jpeg');
+  background-size: cover;
+  height: 2000px;
 }
 </style>

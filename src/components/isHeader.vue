@@ -12,17 +12,15 @@
             <img class="img" src="../assets/logo.png" alt="">
         </div>
         <ul class="navigation" :class="{show: navOn}">
-            <a href="#"><li>home</li></a>
-            <a href="#"><li>projects</li></a>
-            <a href="#"><li>about me</li></a>
-            <a href="#"><li>contact</li></a>
+            <a href="#home"><li>home</li></a>
+            <a href="#projects"><li>projects</li></a>
+            <a href="#contacts"><li>contact</li></a>
         </ul>
       </div>
             <ul class="navigationburger" :class="{show: navOn}">
-            <a href="#"><li>home</li></a>
-            <a href="#"><li>projects</li></a>
-            <a href="#"><li>about me</li></a>
-            <a href="#"><li>contact</li></a>
+            <a href="#home"><li>home</li></a>
+            <a href="#projects"><li>projects</li></a>
+            <a href="#contacts"><li>contact</li></a>
         </ul>
   </div>
 </template>
@@ -31,6 +29,8 @@
 
 export default {
     name: "isHeader",
+    mounted(){
+    },
     data: function (){
         return {
             navOn: false,
